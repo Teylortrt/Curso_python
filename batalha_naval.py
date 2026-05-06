@@ -29,14 +29,14 @@ while True:
         ["~","~","~","~","~"],
     ]
     
-    barcos = 3
+    barcos = 6
     while barcos > 0:
         Lx, Ly = random.randint(0,4), random.randint(0,4)
         if tabuleiro_oculto[Lx][Ly] == 0:
             tabuleiro_oculto[Lx][Ly] = 1
             barcos -= 1
     
-    barcos_restantes = 3
+    barcos_restantes = 6
     tentativas = 0
     while True:
         for linha in tabuleiro_visivel:
