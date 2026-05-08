@@ -15,3 +15,12 @@ class Bola:
 #Ex de uso:
 bola = Bola("vermelha", 30, "borracha")
 print(bola.mostraCor())
+
+escolha = input("Deseja trocar a cor da bola para azul? (sim/não) ")
+ajuste = escolha.strip().lower()
+if ajuste in ["sim", "s"]:
+    bola.trocaCor("azul")
+    print("A cor da bola foi trocada para azul.")
+else:    
+    print("ok, a cor da bola continua a mesma")
+print(bola.mostraCor())
